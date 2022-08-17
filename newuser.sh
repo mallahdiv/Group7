@@ -139,7 +139,7 @@ read -p "Invalid Email.Please enter in the format example@email.com: " Email
 printf "\nEmail: $Email" >> ~/Desktop/$firstName"_HRProfile.txt"
 fi
 
-read -p "Enter Mobile number: " mobNo
+read -p "Enter Mobile number[+x (xxx) xxx-xxxx)]: " mobNo
 if [[ $mobNo =~ $phoneNoFormat ]]
 then
 printf "\nMobile Number: $mobNo" >> ~/Desktop/$firstName"_HRProfile.txt"
@@ -148,7 +148,7 @@ read -p "I'm sorry please enter your number in the format +x (xxx) xxx-xxxx: " h
 printf "\nMobile Number: $mobNo" >> ~/Desktop/$firstName"_HRProfile.txt"
 fi
 
-read -p "Enter Home number\[+x (xxx) xxx-xxxx)\]: " homNo
+read -p "Enter Home number[+x (xxx) xxx-xxxx)]: " homNo
 if [[ $homNo =~ $phoneNoFormat ]]
 then
 printf "\nHome Number: $homNo" >> ~/Desktop/$firstName"_HRProfile.txt"
@@ -157,7 +157,7 @@ read -p "I'm sorry please enter your number in the format +x (xxx) xxx-xxxx: " h
 printf "\nHome Number: $homNo" >> ~/Desktop/$firstName"_HRProfile.txt"
 fi
 
-read -p "Please enter emergency contact phone number\[+x (xxx) xxx-xxxx)\]: " EmerNo
+read -p "Please enter emergency contact phone number[+x (xxx) xxx-xxxx)]: " EmerNo
 if [[ $EmerNo =~ $phoneNoFormat ]]
 then
 printf "\nEmergency Contact: $EmerNo" >> ~/Desktop/$firstName"_HRProfile.txt"
