@@ -29,7 +29,7 @@ echo "
 Welcome new user. Thank you for joining our organization!:D "
 
 echo "
-You're on way to becoming an important part of our group! But first we'll need some info"
+You're on your way to becoming an important part of our group! But first we'll need some info"
 
 echo " "
 #==================================================================#
@@ -148,7 +148,7 @@ read -p "I'm sorry please enter your number in the format +x (xxx) xxx-xxxx: " h
 printf "\nMobile Number: $mobNo" >> ~/Desktop/$firstName"_HRProfile.txt"
 fi
 
-read -p "Enter Home number: " homNo
+read -p "Enter Home number\[+x (xxx) xxx-xxxx)\]: " homNo
 if [[ $homNo =~ $phoneNoFormat ]]
 then
 printf "\nHome Number: $homNo" >> ~/Desktop/$firstName"_HRProfile.txt"
@@ -157,7 +157,7 @@ read -p "I'm sorry please enter your number in the format +x (xxx) xxx-xxxx: " h
 printf "\nHome Number: $homNo" >> ~/Desktop/$firstName"_HRProfile.txt"
 fi
 
-read -p "Please enter emergency contact phone number: " EmerNo
+read -p "Please enter emergency contact phone number\[+x (xxx) xxx-xxxx)\]: " EmerNo
 if [[ $EmerNo =~ $phoneNoFormat ]]
 then
 printf "\nEmergency Contact: $EmerNo" >> ~/Desktop/$firstName"_HRProfile.txt"
