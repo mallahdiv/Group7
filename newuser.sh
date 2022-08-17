@@ -118,7 +118,7 @@ done
 #The following follows a similar structure to the first 3 segments of code.
 #Adapted for different variables and formats.
 #V
-read -p "Please Enter your Date of Birth: "  DOB
+read -p "Please Enter your Date of Birth MM/DD/YYYY: "  DOB
 if [[ $DOB =~ $dateFormat ]]
 then
 printf "\nDate of Birth: $DOB" >> ~/Desktop/$firstName"_HRProfile.txt"
@@ -157,7 +157,7 @@ read -p "I'm sorry please enter your number in the format +x (xxx) xxx-xxxx: " h
 printf "\nHome Number: $homNo" >> ~/Desktop/$firstName"_HRProfile.txt"
 fi
 
-read -p "Please enter emergency contact " EmerNo
+read -p "Please enter emergency contact phone number: " EmerNo
 if [[ $EmerNo =~ $phoneNoFormat ]]
 then
 printf "\nEmergency Contact: $EmerNo" >> ~/Desktop/$firstName"_HRProfile.txt"
