@@ -167,3 +167,7 @@ printf "\nEmergency Contact: $EmerNo\n" >> ~/Desktop/$firstName"_HRProfile.txt"
 fi
 #-=========================================================================-#
 
+# this part of the script will then notify us that a new user has been created by sending an email - jamari
+echo “$firstName, is the new user, profile sucessfully created” | mail -s “this is the subject” jamarikelly2816@gmail.com
+
+
